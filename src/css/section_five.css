@@ -1,0 +1,45 @@
+/* section five */
+#section-five {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 25%;
+  margin-bottom: 108px;
+}
+
+.slider {
+  width: 100%;
+  min-height: 36px;
+  overflow: hidden;
+  background: rgba(255 255 255 / 0.05);
+  border: 1px solid var(--main--border--color);
+  display: flex;
+  align-items: center;
+  padding: 32px;
+  position: absolute;
+  left: 0;
+}
+
+.slide-track {
+  display: flex;
+  width: max-content;
+  gap: 80px;
+  will-change: transform;
+}
+
+.slide {
+  font-family: "Audiowide", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+  gap: 80px;
+  white-space: nowrap;
+}
+
+.slide i {
+  color: white;
+  font-size: 30px;
+}

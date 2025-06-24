@@ -1,0 +1,114 @@
+/* Section Three */
+#section-three {
+  width: 100%;
+  padding: 0 24px;
+  max-width: 1522px;
+  margin: 60px 0 auto;
+  margin-bottom: 128px;
+}
+
+#section-three p {
+  font-family: "Audiowide", sans-serif;
+}
+
+#section-three-title {
+  text-align: center;
+  padding-top: 90px;
+  color: var(--white);
+  font-size: clamp(32px, 5vw, 62px);
+}
+
+/* Partners Grid */
+#partners {
+  padding-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  gap: 32px;
+  justify-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Căn giữa 2 dưới */
+#partners .partner:nth-child(5) {
+  grid-column: 2 / span 1;
+}
+#partners .partner:nth-child(6) {
+  grid-column: 3 / span 1;
+}
+
+/* Partner Item */
+.partner {
+  width: 100%;
+  max-width: 324px;
+  height: clamp(80px, 8vw, 116px);
+  padding: 12px;
+  border: 1px solid var(--second--border--color);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+}
+
+.partner img {
+  max-width: 100%;
+  height: auto;
+  padding: 12px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform-origin: center bottom;
+  object-fit: contain;
+  display: block;
+}
+
+/* Info Hover */
+.infomation {
+  color: #fff;
+  position: absolute;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  text-align: center;
+}
+
+.infomation.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive: 3 trên 3 dưới */
+@media (max-width: 1500px) {
+  #partners {
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+  }
+
+  /* Reset vị trí căn giữa */
+  #partners .partner:nth-child(5),
+  #partners .partner:nth-child(6) {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 1400px) {
+  #partners {
+    width: 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1300px) {
+  #partners {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}

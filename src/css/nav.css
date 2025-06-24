@@ -1,0 +1,139 @@
+/* Nav */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+  max-width: 1769px;
+  width: 100%;
+  height: 100px;
+  padding: 16px 99.5px;
+  margin: 0 68px;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .nav-center a {
+    display: none;
+  }
+
+  .nav-right a {
+    display: none;
+  }
+
+  .navbar {
+    padding: 0px 0px;
+    margin: 0px 0px;
+  }
+
+  .nav-left img {
+    max-width: 35px;
+    max-height: 35px;
+    padding: 16px;
+  }
+
+  .nav-right {
+    padding-top: 12px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 390px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .nav-center a {
+    display: none;
+  }
+}
+
+header.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background-color: rgba(29, 28, 28, 0.03);
+  z-index: 10;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  width: 390px;
+  height: 70px;
+}
+
+.nav-left img {
+  max-width: 70px;
+  max-height: 70px;
+  padding: 16px;
+}
+
+.nav-right {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 390px;
+  height: 70px;
+}
+
+.nav-center {
+  width: 721px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-right a {
+  padding: 16px 18px;
+  color: #f3f2ff;
+  width: 172px;
+  height: 52px;
+  background-color: #7861ff;
+  clip-path: polygon(
+    10px 0%,
+    100% 0%,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    0% 100%,
+    0% 10px
+  );
+}
+
+.ri-arrow-right-s-line {
+  padding-left: 6px;
+}
+
+.nav-center a {
+  color: var(--gray);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.connect-wallet-btn {
+  padding: 16px 18px;
+  color: #f3f2ff;
+  width: 172px;
+  height: 52px;
+  background-color: #7861ff;
+  border: none;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  clip-path: polygon(
+    10px 0%,
+    100% 0%,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    0% 100%,
+    0% 10px
+  );
+}

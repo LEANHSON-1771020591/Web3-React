@@ -1,0 +1,118 @@
+#section-two {
+  height: 638px;
+  margin: 120px auto;
+}
+
+#section-two-content {
+  width: 1430px;
+  min-height: 638px;
+  border: 1px solid var(--second--border--color);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  padding: 70px;
+  gap: 16px;
+  align-items: center;
+}
+
+.section-two-content-box {
+  flex: 1 1 50%;
+  min-width: 384px;
+  width: 640px;
+  height: 638px;
+  min-height: 300px;
+  margin-right: 65px;
+}
+
+@media (max-width: 768px) {
+  #section-two {
+    height: 638px;
+    margin: 120px auto;
+    width: 100%;
+    margin-bottom: 750px;
+  }
+
+  #section-two-content {
+    height: 1500px;
+    width: 100%;
+    border: 1px solid var(--second--border--color);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .section-two-content-box {
+    flex: 1 1 50%;
+    width: 100%;
+    min-height: 300px;
+    margin-right: 65px;
+    margin: 0 auto;
+  }
+}
+
+/* right */
+
+#section-two-content-right-title {
+  width: 100%;
+  border: var(--second--border--color) 1px solid;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  padding: 24px;
+  border-radius: 12px;
+  background-color: var(--black-dam);
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#section-two-content-right-title-content {
+  width: 29%;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#section-two-content-right-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-two-content-right-content-items {
+  font-size: 18px;
+  color: #fff;
+  background-color: var(--black-dam);
+  padding: 16px 24px;
+  border-radius: 12px;
+}
+
+/* left */
+
+#section-two-content-left-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#section-two-content-left-title-one {
+  font-size: 32px;
+  background: linear-gradient(90deg, rgb(57, 38, 173), rgb(195, 103, 214));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#section-two-content-left-title-two {
+  font-size: 18px;
+  color: var(--gray);
+}
